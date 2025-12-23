@@ -1,7 +1,16 @@
 // Simple smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+
+        // Mobile Booking Logic: Open Modal instead of scroll
+        if (href === '#booking' && window.innerWidth <= 768) {
+            e.preventDefault();
+            openModal();
+            return;
+        }
+
+        const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
             target.scrollIntoView({
