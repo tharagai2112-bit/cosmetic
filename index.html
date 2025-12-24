@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -35,7 +36,7 @@
     <div class="hero-overlay">
         <div class="container container-hero">
             <div class="hero-content" data-aos="fade-up">
-                <span class="hero-tag">Pinnacle of Aesthetic Excellence</span>
+                <span class="hero-tag">Creas - Cosmetic Surgery Center</span>
                 <h1>Enhance Your <br>Natural Beauty</h1>
                 <p>Advanced Surgical & Aesthetic Treatments Tailored to Your Unique Portrait</p>
             </div>
@@ -95,32 +96,35 @@
 
             <div class="booking-card" data-aos="fade-left">
                 <h3>Consultation Form</h3>
-                <form class="booking-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Mobile Number" required>
-                    </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Speciality</option>
-                            <option>Gynaecomastia</option>
-                            <option>Liposuction</option>
-                            <option>Lipoma</option>
-                            <option>Tummy Tuck</option>
-                            <option>Face Lift surgery</option>
-                            <option>Laser Hair Removal</option>
-                            <option>Others</option>
-                        </select>
+                <form action="thank-you.html" method="post">
+
+                    <form class="booking-form">
                         <div class="form-group">
-                            <label for="Appointment-date"
-                                style="display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-secondary, #666); font-weight: 500;">Appointment
-                                Date</label>
-                            <input type="date" id="Appointment-date" required>
+                            <input type="text" placeholder="Full Name" required>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-full">Book Now</button>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Speciality</option>
+                                <option>Gynaecomastia</option>
+                                <option>Liposuction</option>
+                                <option>Lipoma</option>
+                                <option>Tummy Tuck</option>
+                                <option>Face Lift surgery</option>
+                                <option>Laser Hair Removal</option>
+                                <option>Others</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="Appointment-date"
+                                    style="display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-secondary, #666); font-weight: 500;">Appointment
+                                    Date</label>
+                                <input type="date" id="Appointment-date" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-full">Book Now</button>
+                    </form>
                 </form>
             </div>
         </div>
@@ -148,7 +152,7 @@
 <!-- SERVICES SECTION -->
 <section class="services" id="services">
     <div class="container overflow-visible">
-        <h2 class="section-title">Our Specialized Services</h2>
+        <h2 class="section-title">Creas Signature Services</h2>
         <div class="services-grid">
             <!-- Male Cosmetic -->
             <div class="service-card" data-aos="fade-up">
@@ -193,15 +197,17 @@
             <img src="Assets/our-team.webp" alt="Our Expert Medical Team">
         </div>
         <div class="team-text" data-aos="fade-left">
-            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Mastery in Every Procedure</h2>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">People Behind Your Care</h2>
             <p>
-                Our board-certified surgeons and aesthetic specialists are recognized leaders in their fields. With
-                decades of combined experience and a commitment to continuous innovation, we ensure that every patient
-                receives the highest standard of specialized care.
-            </p>
+                Experience world-class aesthetic care with our skilled Creas team,
+                guided by our internationally trained and one of the Best Plastic
+                Surgeon in Coimbatore.
             <p>
-                From initial consultation to final recovery, our team is with you every step of the way, ensuring
-                world-class outcomes and an unmatched level of comfort.
+                Our healthcare professionals are fully
+                certified, and each member has extensive background in
+                advanced cosmetic procedures including liposuction, breast
+                surgery, facial procedures, skin treatments, and compassionate
+                patient support.
             </p>
         </div>
     </div>
@@ -260,7 +266,7 @@
         <span class="modal-close" onclick="closeModal()">×</span>
         <div class="booking-card">
             <h3>Consultation Form</h3>
-            <form class="booking-form">
+            <form action="thank-you.html" method="post">
                 <div class="form-group">
                     <input type="text" placeholder="Full Name" required>
                 </div>
@@ -373,14 +379,14 @@
     <div class="container footer-grid">
         <div class="footer-about desktop-only" style="flex-direction: column; align-items: flex-start;">
             <img src="Assets/logo.png" alt="Creas Logo" class="footer-logo">
-            <p>Your journey to confidence starts here. Advanced cosmetic treatments with natural-looking results.
-            </p>
+            <!-- <p>Your journey to confidence starts here. Advanced cosmetic treatments with natural-looking results.
+            </p> -->
         </div>
 
         <div class="footer-contact">
-            <h3><i class="fa-solid fa-location-dot"></i> Contact Us</h3>
+            <!-- <h3><i class="fa-solid fa-location-dot"></i> Contact Us</h3> -->
             <p>439, Kamarajar Rd,</p>
-            <p>Cluster Media College Campus,</p>
+            <!-- <p>Cluster Media College Campus,</p> -->
             <!-- <p>Chitra Nagar, Hope College,</p> -->
             <p>Coimbatore - 641 004,</p>
             <!-- <p>Tamil Nadu, India</p> -->
@@ -445,6 +451,7 @@
         document.getElementById("popupVideo").src = "";
     }
 </script>
+
 
 </body>
 
