@@ -8,7 +8,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -37,8 +36,8 @@
         <div class="container container-hero">
             <div class="hero-content" data-aos="fade-up">
                 <span class="hero-tag">Creas - Cosmetic Surgery Center</span>
-                <h1>Enhance Your <br>Natural Beauty</h1>
-                <p>Advanced Surgical & Aesthetic Treatments Tailored to Your Unique Portrait</p>
+                <h1>Transform into <br>Your Best Self</h1>
+                <p>Customized Surgical and Aesthetic Solutions to Elevate Your Unique Charm</p>
             </div>
         </div>
     </div>
@@ -49,9 +48,9 @@
         <div class="consultation-grid">
             <div class="consultation-info" data-aos="fade-right">
                 <div class="section-heading">
-                    <h2 style="margin-bottom: 20px;">Experience Excellence</h2>
-                    <p style="margin-bottom: 40px;">Schedule a consultation with our expert cosmetic surgeons and take
-                        the first step towards a more confident you.</p>
+                    <h2 style="margin-bottom: 20px;">Proven Excellence in Aesthetic Care</h2>
+                    <p style="margin-bottom: 40px;">Book a consultation today and let our expert surgeons guide you to
+                        your ideal look with personalized care.</p>
                 </div>
 
                 <div class="consultation-stats">
@@ -61,7 +60,7 @@
                         </div>
                         <div class="c-stat-info">
                             <h3>15+</h3>
-                            <p>Years Experience</p>
+                            <p>Years of Expertise</p>
                         </div>
                     </div>
                     <div class="c-stat" data-aos="fade-up" data-aos-delay="200">
@@ -69,8 +68,8 @@
                             <i class="fa-solid fa-heart-pulse"></i>
                         </div>
                         <div class="c-stat-info">
-                            <h3>3500+</h3>
-                            <p>Surgeries</p>
+                            <h3>4500+</h3>
+                            <p>Surgeries Performed</p>
                         </div>
                     </div>
                     <div class="c-stat" data-aos="fade-up" data-aos-delay="300">
@@ -78,8 +77,8 @@
                             <i class="fa-solid fa-clipboard-check"></i>
                         </div>
                         <div class="c-stat-info">
-                            <h3>2000+</h3>
-                            <p>Procedures</p>
+                            <h3>6000+</h3>
+                            <p>Happy Patients</p>
                         </div>
                     </div>
                     <div class="c-stat" data-aos="fade-up" data-aos-delay="400">
@@ -87,8 +86,8 @@
                             <i class="fa-solid fa-face-smile"></i>
                         </div>
                         <div class="c-stat-info">
-                            <h3>4500+</h3>
-                            <p>Happy Patients</p>
+                            <h3>2500+</h3>
+                            <p>Non-Surgical Treatments</p>
                         </div>
                     </div>
                 </div>
@@ -96,37 +95,40 @@
 
             <div class="booking-card" data-aos="fade-left">
                 <h3>Consultation Form</h3>
-                <form action="thank-you.html" method="post">
 
-                    <form class="booking-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Full Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Mobile Number" required>
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Speciality</option>
-                                <option>Gynaecomastia</option>
-                                <option>Liposuction</option>
-                                <option>Lipoma</option>
-                                <option>Tummy Tuck</option>
-                                <option>Face Lift surgery</option>
-                                <option>Laser Hair Removal</option>
-                                <option>Others</option>
-                            </select>
-                            <div class="form-group">
-                                <label for="Appointment-date"
-                                    style="display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-secondary, #666); font-weight: 500;">Appointment
-                                    Date</label>
-                                <input type="date" id="Appointment-date" required>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-full">Book Now</button>
-                    </form>
+                <form action="thank-you.html" method="get" class="booking-form">
+
+                    <div class="form-group">
+                        <input type="text" name="full_name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="speciality" required>
+                            <option value="">Speciality</option>
+                            <option>Gynaecomastia</option>
+                            <option>Liposuction</option>
+                            <option>Lipoma</option>
+                            <option>Tummy Tuck</option>
+                            <option>Face Lift Surgery</option>
+                            <option>Laser Hair Removal</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Appointment Date</label>
+                        <input type="date" name="appointment_date" required>
+                    </div>
+                    <p class="error-msg" id="errorMsg"></p>
+                    <button type="submit" class="btn btn-full">Book Now</button>
+
                 </form>
             </div>
+
         </div>
 
     </div>
@@ -136,15 +138,16 @@
 <section class="about" id="about">
     <div class="container about-grid">
         <div class="about-text" data-aos="fade-right">
-            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Elite Aesthetic Care</h2>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">About Creas Cosmetic Surgery Center
+            </h2>
             <p>
-                We are a premier cosmetic surgery center dedicated to the art of subtle transformation. Our
-                state-of-the-art facility combines clinical excellence with a luxury patient experience, offering both
-                surgical and non-surgical procedures tailored to your unique anatomy.
+                At Creas, we offer personalized cosmetic and reconstructive surgery in a luxurious, state-of-the-art
+                facility. Our expert surgeons provide both surgical and non-surgical treatments tailored to enhance your
+                natural beauty with subtle, natural results.
 
         </div>
         <div class="about-img" data-aos="fade-left">
-            <img src="Assets/sam.png" alt="Our Premium Clinic Interior">
+            <img src="Assets/about.png" alt="Our Premium Clinic Interior">
         </div>
     </div>
 </section>
@@ -172,7 +175,8 @@
                 </div>
                 <div class="service-card-content">
                     <h3>Female Cosmetic Surgery</h3>
-                    <p>Breast procedures, liposuction, rhinoplasty and rejuvenation surgeries.</p>
+                    <p>Breast procedures, liposuction, rhinoplasty and rejuvenation surgeries.
+                    </p>
                 </div>
             </div>
 
@@ -183,7 +187,8 @@
                 </div>
                 <div class="service-card-content">
                     <h3>Non-Surgical Treatments</h3>
-                    <p>Botox, fillers, PRP, laser treatments and skin rejuvenation therapies.</p>
+                    <p>Botox, fillers, PRP, laser treatments and skin rejuvenation therapies.
+                    </p>
                 </div>
             </div>
         </div>
@@ -197,17 +202,17 @@
             <img src="Assets/our-team.webp" alt="Our Expert Medical Team">
         </div>
         <div class="team-text" data-aos="fade-left">
-            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">People Behind Your Care</h2>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">People Behind Every Successful
+                Transformation
+            </h2>
             <p>
-                Experience world-class aesthetic care with our skilled Creas team,
-                guided by our internationally trained and one of the Best Plastic
-                Surgeon in Coimbatore.
+                At Creas, we offer world-class care led by one of Coimbatore’s top plastic surgeons, Dr. C. Senthil
+                Kumar. Our internationally trained team specializes in advanced cosmetic procedures, providing
+                personalized treatments tailored to each patient’s unique needs. With a focus on natural results, we
+                combine cutting-edge techniques with compassionate support.
             <p>
-                Our healthcare professionals are fully
-                certified, and each member has extensive background in
-                advanced cosmetic procedures including liposuction, breast
-                surgery, facial procedures, skin treatments, and compassionate
-                patient support.
+                Experience safe, effective treatments in our
+                state-of-the-art facility for a confident, rejuvenated you.
             </p>
         </div>
     </div>
@@ -262,41 +267,48 @@
 <!-- Booking Modal -->
 <div class="modal" id="bookingModal">
     <div class="modal-overlay" onclick="closeModal()"></div>
+
     <div class="modal-content">
         <span class="modal-close" onclick="closeModal()">×</span>
+
         <div class="booking-card">
             <h3>Consultation Form</h3>
-            <form action="thank-you.html" method="post">
+
+            <form action="thank-you.html" method="get" class="booking-form">
+
                 <div class="form-group">
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Mobile Number" required>
+                    <input type="text" name="full_name" placeholder="Full Name" required>
                 </div>
 
                 <div class="form-group">
-                    <select required>
+                    <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                </div>
+
+                <div class="form-group">
+                    <select name="speciality" required>
                         <option value="">Speciality</option>
                         <option>Gynaecomastia</option>
                         <option>Liposuction</option>
                         <option>Lipoma</option>
                         <option>Tummy Tuck</option>
-                        <option>Face Lift surgery</option>
+                        <option>Face Lift Surgery</option>
                         <option>Laser Hair Removal</option>
                         <option>Others</option>
                     </select>
                 </div>
+
                 <div class="form-group">
-                    <label for="Appointment-date"
-                        style="display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-secondary, #666); font-weight: 500;">Appointment
-                        Date</label>
-                    <input type="date" id="Appointment-date" required>
+                    <label>Appointment Date</label>
+                    <input type="date" name="appointment_date" required>
                 </div>
+                <p class="error-msg" id="errorMsg"></p>
                 <button type="submit" class="btn btn-full">Book Now</button>
+
             </form>
         </div>
     </div>
 </div>
+
 
 <!-- Popup Video -->
 <!-- <div class="video-popup" id="videoPopup">
@@ -450,6 +462,50 @@
         document.getElementById("videoPopup").style.display = "none";
         document.getElementById("popupVideo").src = "";
     }
+</script>
+<script>
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+
+        const name = document.getElementById("fullName").value.trim();
+        const mobile = document.getElementById("mobile").value.trim();
+        const speciality = document.getElementById("speciality").value;
+        const date = document.getElementById("appointmentDate").value;
+        const errorMsg = document.getElementById("errorMsg");
+
+        errorMsg.innerText = "";
+
+        // Name validation
+        if (name.length < 3) {
+            errorMsg.innerText = "Please enter a valid full name";
+            e.preventDefault();
+            return;
+        }
+
+        // Mobile validation (India)
+        if (!/^[6-9]\d{9}$/.test(mobile)) {
+            errorMsg.innerText = "Enter a valid 10-digit mobile number";
+            e.preventDefault();
+            return;
+        }
+
+        // Speciality validation
+        if (speciality === "") {
+            errorMsg.innerText = "Please select a speciality";
+            e.preventDefault();
+            return;
+        }
+
+        // Date validation (no past date)
+        const selectedDate = new Date(date);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        if (!date || selectedDate < today) {
+            errorMsg.innerText = "Please select a valid appointment date";
+            e.preventDefault();
+            return;
+        }
+    });
 </script>
 
 
